@@ -1,0 +1,147 @@
+:root{
+     --main-color: #ff4500;
+}
+
+
+hr{
+   border: 1px solid rgb(233, 228, 228);
+}
+
+
+.page-content h1{ 
+     color: var(--main-color);    
+}
+
+.header{
+    position: relative;
+    padding: 10px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    
+}
+
+.page-content .header .logo{
+    width: 200px;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.page-content .header .links{
+    padding: 15px;
+    font-weight: bold;
+}
+
+.page-content .content{
+     /* background-color: blue;  */
+    /* width: 100%; */
+    padding: 35px;
+    height: 100%;
+    
+}
+
+.page-content .content .user-info{
+    /* background-color: blueviolet; */
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.page-content .content .user-info .user-data{
+    /* background-color: #7199e2; */
+}
+
+
+
+.page-content .content .user-info .user-image{
+    width: 30%;
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.page-content .content .user-info .user-image .image-box img{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.page-content .content .user-account{
+    /* background-color: brown; */
+    display: flex;
+}
+
+.page-content .content .user-account .labels{
+    width: 30%;
+    color: rgb(163, 157, 157);
+}
+
+.page-content .content .user-account .labels h3{
+    /* background-color: red; */
+    margin: 10px;
+    height: 22px;    
+   
+}
+
+.page-content .content .user-account .labels-values p{
+    margin: 10px;
+    /* background-color: red; */
+    height: 22px;
+}
+
+
+.sessions{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eeeeee;
+}
+
+.sessions h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+.sessions .session-box{
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.sessions .session-box .session-name{
+    font-weight: bold;
+    width: 140px;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.sessions .session-box .session-progress{
+    height: 30px;
+    width: calc(100% - 150px);
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sessions .session-box .session-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: all 2s;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+   
+</head>
+<body>
+    <div class="page-content">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="links">Settings</div>
+        </div>
+
+        <div class="content">
+            <div class="user-info">
+                <div class="user-image">
+                    <div class="image-box">
+                        <img src="{{ url_for('static', filename='imgs/user.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="user-data">
+                    <h1>{{ user.name }}</h1>
+                    <p><a href="https://google.com">{{ user.email }}</a> - User</p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, deleniti quisquam nam alias, facere, asperiore</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque animi sapiente culpa. Suscipit, voluptas?</p>
+                    
+                </div>
+            </div>
+
+            <h1>Account</h1>
+            <hr>
+
+            <div class="user-account">
+                
+                <div class="labels">
+                    <h3>User Name: </h3>
+                    <h3>Email:</h3>
+                    <h3>Password:</h3>
+                    <h3>Name:</h3>
+                    <h3>Age:</h3>
+                </div>
+                <div class="labels-values">
+                    <p><input type='text' value='{{ user.user_name }}' id='myUserName'></p>
+                    <p><input type='text' value='{{ user.email }}' id='myEmail'></p>
+                    <p><input type='password' value='{{ user.password }}' id='myPassword'> <input type='checkbox' onclick='showPassword()'> Show Password</p>
+                    <p><input type="text" value="{{ user.name }}" id='myName'></p>
+                    <p><input type='text' value = '{{ user.age }}' id='myAge'></p>
+                    <button onclick="saveChanges()">Save Changes</button>
+                </div>
+            </div>
+
+            
+    
+
+        </div>
+    </div>
+
+    <!-- Start Sessions Section -->
+
+    <div class="sessions">
+        <h2>Session Progress</h2>
+        <div class="session-box">
+            <div class="session-name">Sessions</div>
+            <div class="session-progress">
+                <span data-progress="30%"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- End Sessions Section -->
+
+    <script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+</body>
+</html>

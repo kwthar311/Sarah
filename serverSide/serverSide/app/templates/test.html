@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.con/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+
+    <!-- Start Sign Up -->
+<div id="sign-up" class="sign" >
+    <div class="container-sign-up">
+        <div class="form-container sign-in-container">
+            <p onclick="document.getElementById('sign-up').style.display='none'" class="close" title="Close Modal">&times;</p>
+            <form action="/register" method="POST">
+                <h1>Sign Up</h1>
+                <div class="social-container">
+                    <a href="#" class="social">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <span> or create your account</span>
+                <input type="text" name="username" placeholder="User Name">
+                <input type="text" name="name" placeholder="Name">
+                <input type="number" name="age" placeholder="Age">
+                <div class="custom-select" style="width: 100%; text-align: left;">
+                    <select name="gender">
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                    </select>
+                </div>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <a onclick="document.getElementById('sign-up').style.display='none'; document.getElementById('sign-in').style.display='flex'" href="#">Have an acount</a>
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Test -->
+
+<!-- Start Sign In -->
+<div id="sign-in" class="sign" >
+    <div class="container-sign-in">
+        <div class="form-container sign-in-container">
+            <p onclick="document.getElementById('sign-in').style.display='none'" class="close" title="Close Modal">&times;</p>
+            <form action="/login" method="POST">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                    <a href="#" class="social">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+    
+                <span>or use your account</span>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <a href="#">Forgot Your Password</a>
+                <button>SignIn</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Sign In -->
+
+<!-- Start Setting Box -->
+<div class="settings-box">
+    <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+    </div>
+    <div class="settings-container">
+        <div class="option-box">
+            <h4>Colors</h4>
+            <ul class="colors-list">
+                <li data-color="#ff4500" class="active"></li>
+                <li data-color="#e91e63"></li>
+                <li data-color="#009688"></li>
+                <li data-color="#11aa2b"></li>
+                <li data-color="#03a9f4"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Setting Box -->
+
+
+<!-- Start landing page -->
+ <div>
+    <div class="landing-page">
+        <div class="overlay"></div>
+        
+        <div class="header-area" id=home>
+        <div class="logo">Sarah Logo</div>
+            <ul class="links center-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        <div class="right-buttons">
+        <!-- A temprary thing to trial button -->
+        <button>Trial Session</button>
+            <ul class="links right-links">
+                <li><a onclick="document.getElementById('sign-in').style.display='flex'" href="#">Login</a></li>
+                <li><a onclick="document.getElementById('sign-up').style.display='flex'" href="#">Register</a></li>
+            </ul>
+        </div>
+        </div>  
+        <div class="intro-text">
+            <h1>It's <span>Sarah</span> App</h1>
+            <p>welcom home where are our lovers</p>
+        </div>
+    
+    </div>
+    
+</div>
+<!-- End landing page -->
+
+<!-- Start About Us Section -->
+<div class="container">
+    <div class="about-us" id="about">
+    <div class="info-box">
+        <h2 >About Us</h2>
+        <!-- <p>We are students at FCIS developing a AI-Psychologis Web App</p> -->
+        <p>We are group of computer science students decided to make a virtual psychologist as our graduation project wishing to help our society to overcome a critical issue which is psychological disorders.</p>
+    </div>
+    <div class="image-box">
+        <img src="{{ url_for('static', filename='imgs/about-us-3.jpeg') }}" alt="about us image">
+    </div>
+</div>
+</div>
+<!-- End About Sectoin -->
+
+<script src="{{ url_for('static', filename='js/master.js') }}">
+
+</script>
+</body>
+</html>

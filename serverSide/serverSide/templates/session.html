@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/session.css') }}">
+
+</head>
+<body onload="startTime()">
+    
+    <div class="all-page">
+
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="pages">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div class="exit"><a href="#">Exit</a></div>
+        </div>
+
+        <hr>
+
+    <div class="content">
+        <div class="left-part">
+            <div class="img-box">
+                <img src="{{ url_for('static', filename='imgs/avatar.jpg') }}">
+            </div>
+            <div class="info">
+                <h2>Sarah</h2>
+                <p>Explain some info</p>
+                <p>Hope you are enjoying this conversation , remember we are here to imporve your mental heath and help you to deal with any problem you face, so try to be honest to help us diagnosing your case and making better results, be sure that there is a solution for every problem so never lose hope.</p>
+                <p>If You have problems/comments you can contact us:</p>
+                <i class="fa fa-phone icon fa-2x"></i>
+                <i class="fa fa-envelope icon fa-2x"></i>
+            </div>
+            <hr>
+            <h3>Time</h3>
+            <p style="text-align: left;">You start the session at:</p>
+            <br>
+            <span id="start"> 
+                
+            </span>
+            <p style="text-align: left;">Time now:</p>
+            <div class="clock">
+                <div class="clock-box"><h2 id="hour">5</h2></div>
+                <div class="clock-box"><h2 id="minute">3</h2></div>
+                <div class="clock-box"><h2 id="second">4</h2></div>
+            </div>
+
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="right-part">
+            <div class="message-box-header">
+                <h4>We Wish you enjoying the session</h4>
+                <p id="elapsed">0 : 0 : 0</p>
+            </div>
+            <div id ="messageBox" class="message-box">
+                <div class="server">
+                    <p>Welcome {{ userName }}</p>
+                </div>
+                
+            </div>
+            <hr id="bottom">
+            <div class="message-box-submit">
+                <form onsubmit="return false;" action="">
+                    <input type="text" id="textMessage" autocomplete="off" name="textMessage" placeholder="Type a message ...">
+                    <input class="fa fa-paper-plane" id="sendButton" type="button" value="sumbit" onclick="sendMessage()">
+                </form>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='js/session.js') }}"></script>
+</body>
+</html>

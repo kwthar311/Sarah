@@ -1,0 +1,270 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },{
+      "tag": "date",
+      "patterns": ["what today's date?","what is the current month?","What year are we in?"],
+      "responses": ["Today's date is "]
+    },{
+      "tag":"services",
+      "patterns": ["how can you help me?","what services can you offer me?","What kind of services can you provide for me?"
+      ,"What kind of services do you think you could provide for me?","what can you do for me?"],
+      "responses": ["I can answer any question you have and I am here to give you mental support when you need it."]
+    },{
+      "tag": "creation",
+      "patterns": ["who made you?","Who created you?","Who developed you?","Who designed you?","Who invented you?"],
+      "responses": ["I was made by group of friends who decided to create a virtual psychologist as their graduation project."]
+    },{
+      "tag":"permasion",
+      "patterns": ["can I talk to you right now?","can I tell you something?","Is it possible for me to speak with you right now?"
+      ,"Is it okay to talk with you right now?","Is it okay if I tell you something?"],
+      "responses": ["sure, I am here for you whenever you need me."]
+    },{
+      "tag": "me",
+      "patterns": ["what are you?","who are you?","what is your name?","What exactly are you?","What actually are you?"],
+      "responses": ["My name is Sarah, I am a conversational chatbot designed to help people who have problems in life or need someone to talk to."]
+    },{
+      "tag": "morningGreeting",
+      "patterns": ["good morning","hello and nice morning"],
+       "responses": ["Good Morning","Hello and nice morning."]
+    },
+    {
+      "tag": "nightGreeting",
+      "patterns": ["good night","good evening"],
+       "responses": ["Good Night","Good Evening"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses":
+      [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "Two guys stole a calendar. They got six months each.",
+        "How did the telephone propose to its girlfriend? He gave her a ring.",
+        " What is brown, hairy and wears sunglasses?A coconut on vacation.",
+        "Why was 6 afraid of 7? Because 7, 8, 9",
+        "Why did the math book look so sad? Because it had so many problems!",
+        "Where do fish keep their money? In the river bank"
+      ]
+    },
+    {
+      "tag":"dQ1",
+      "patterns":
+              ["I have no energy to do anything", "I don't want to make a thing", "My power is gone"],
+      "responses":
+              ["Try to set a goal as many times we feel unmotivated by not fully understanding the goal we aspire to reach.",
+              "Try to shift your focus slightly from the thoughts you normally think of",
+              "New things always create feelings of mistrust and even fear. But you will never know that these things are useful or not until you try it",
+              "Have you ever heard of the belief that positive thinking leads to positive results? So, get rid of the things that can lead you to self-destruction or isolation."
+                              ,"Every day, learn something new to make each day unique."]
+    },
+    {
+      "tag": "dQ2",
+      "patterns":
+              [
+                "I feel unhappy","I feel upset","I feel sad and without hope","serious","gloomy","sombre","melancholy","sorrowful",
+                "subdued","nquiet","worried","bleak","wistful","homesick","Down in the mouth","Down in the dumps","Reduce to tears"
+                ,"forlorn","without hope","desperate","melancholy","disconsolae","discouraging",
+                "past cure","dejected","despair","the feeling that a situation is so bad that nothing you can do will change it",
+                "gloom","the feeling of having no hope","a sinking feeling","a feeling that you get when you realize something bad has happened or is going to happen",
+                "defeatism","an attitude that shows that you think you will fail","beyond (all) hope","so much or so badly that it will never get better",
+                "doom and gloom","feeling that a situation is very bad and without hope"
+                ,"some hope","not a hope","used for saying that there is no chance of something happening",
+                "pessimism","the attitude of someone who thinks that the worst thing will happen in every situation","negativity",
+                "the attitude of someone who always sees the bad aspects of a situation"
+              ],
+      "responses":
+              ["I'm here for you.","Is there anything i can do to help?","There is hope.",
+                "Do you need someone to talk with you?","I care."]
+    },
+    {
+      "tag": "dQ3.1",
+      "patterns":
+              ["I feel difficulty falling asleep at night"
+              ,"I suffer from waking up during the night","Sometimes i wake up too early Not feeling well-rested after a night's sleep"
+              ,"Occasionally i am not feeling well-rested after a night's sleep"
+              ,"Sometimes i feel daytime tiredness or sleepiness"
+              ,"I suffer from ongoing worries about sleep"],
+      "responses":
+              [
+                "Every day, start your day at the same hour."
+                ,"Remove alcohol and stimulants like nicotine and caffeine from your diet."
+                ,"Limit naps because they can decrease the quality of your overnight sleep.","Regular exercise can improve sleep quality and duration,Try to finish exercising at least three hours before going to bed."
+                ,"Avoid watching TV or listening to the radio while in bed or even in the bedroom. All of these activities can make it difficult to fall asleep."
+                ,"Create a relaxing sleeping environment."
+              ]
+    },
+    {
+      "tag": "dQ3.2",
+      "patterns":
+              ["fell lazy","sleep alot","lethargy"],
+      "responses":
+              ["Make sure to drink enough water each day, since 8 glasses of water is recommended to avoid dehydration, which can lead to tiredness..",
+               "Eat a healthy, balanced diet that includes the best vitamins and minerals that provide the body energy"
+              ,"Make sure you get enough sleep each night, rest and relax as much as possible "
+              ,"Exercising is very important so try to exercise on a regular basis, even if it is just walking for half an hour every day. You can practice relaxation exercises, including yoga."              ]
+    },
+     {
+      "tag": "dQ4",
+      "patterns":
+              ["tired","I need to rest or sleep","Exhausted","I extremely tired","No energy to do anything"
+              ,"fagitued","dozy","Run-DoWn","All in","On your last legs"],
+       "responses":
+               ["You might feel that exercise is the last thing on your mind.But, in fact, regular exercise will make you feel less tired in the long run,so you'll have more energy.",
+               "Reduce stress to boost energy:yoga or listening to music or reading or spending time with friends","Drink more water for more energy "]
+    },
+    {
+      "tag": "dQ5.1",
+      "patterns":
+      ["Anorexia","Food aversion","anorexia nervosa","Eating disorder","Lack of appetite",
+              "I eat or drink much more than I need","Replete",
+              "Stuffed","I eat until feel full or ill"],
+      "responses":
+              ["eating foods that look and smell appealing"
+              ,"Rephrase enhancing the flavour with aromatic spices and herbs"
+              ,"enjoying meals by playing music and presenting the food in a pleasing manner"
+              ,"during the day, eat smaller, more frequent meals"
+              ,"Every day, eat at the same hour."]
+    },
+    {
+      "tag": "dQ5.2",
+      "patterns":
+      ["I eat or drink much more than I need","I eat until feel full or ill"],
+      "responses":
+              ["waiting till Wait till you are reasonably hungry but not ravenous", "avoiding distractions during meals, such as the TV",
+               "before eating, take five deep breaths",
+               "chewing thoroughly and in little bits",
+               "paying attention to the indicators that your body is full",
+                "drinking plenty of liquids"]
+    },
+    {
+      "tag": "dQ6",
+      "patterns":
+              ["Foiling","Annoyance","Dissatisfaction","Failure","Non Performance"
+              ,"No progress","Non implementation","Breach","infringement","Non compliance"
+              ,"Non conformily","Unfulfilled","Not to do"],
+      "responses":
+              ["Choose to forgive yourself for any perceived failures. Stop judging your place in life based on what you've earned. Be proud of what you have accomplished"
+              ,"When you decide to overcome, you are making the decision to pursue your next dream or goal.","Stop blaming yourself","Focus on the big picture, but don't ignore the small steps."
+              ," Stop expecting perfection.","Distractions only create more feelings of dissatisfaction."]
+    },
+     {
+      "tag": "dQ7",
+      "patterns":
+              ["Self harming", "Hurt myself","Preferring death over life","Wish to die"],
+       "responses":
+               ["Try to get enough sleep; it will help you live a more balanced life."
+               ,"You must pay attention to your diet."
+               ,"Make an effort to exercise at least once a day. Remove any distractions, such as social media.",
+               "Try to use concentration techniques and stay away from stress."]
+     },
+      {
+      "tag":"dQ8",
+      "patterns":
+      ["Taciturn", "Speak a little", "Speaking fast", "Talkative", "Moving slowly", "Hyperactive", "Being Lazy"],
+       "responses":
+               ["Use positive self-talk rather than negative self-talk.","Make boring tasks enjoyable.","Make your objectives manageable."
+               ," Use your strengths"]
+    },
+    {
+      "tag": "dQ9",
+      "patterns":
+              ["Poor Concentration","Lack of Concentration","Lack of absorptio","Forget a lot","Take time to understand"],
+      "responses":
+              ["Try to go outside and visit new places and meet new people.",
+                "Good friends help us to overcome anything so try to talk to a friend."
+              ,"Music is good for the soul, so try to listen to some of your favourites."]
+    },
+    {
+      "tag": "AQ1,6",
+      "patterns":
+              ["Hit The Ceiling","angry"," Livid","Furious","Mad","Go ballistic","To be up in arms about something",
+                  "To  bite someone's head off"],
+      "responses":
+              ["Calm down every problem comes with a solution. "," Letting go is good.","Just relax"]
+    },
+    {
+      "tag": "AQ2,3",
+      "patterns":
+              ["Unable to control anxiety","lake of control over anxiety","Unable to end anxiety","Unable to put an end to anxiety",
+              "worry about","be concerned about","Worrying excessively about"],
+      "responses":
+             [ "What can I do to help right now?","I love you and I am always here for you, no matter what's going on.",
+             "Every time you are tempted to react in the same old way, ask if you want to be a prisoner of the past or a pioneer of the future.",
+             "Smile, breathe, and go slowly."]
+     },
+     {
+      "tag": "AQ4,5",
+      "patterns":
+              ["Difficulty relaxing","It's difficult to unwind.","it is hard to Chill out",
+                "can't zonk out"
+              ],
+      "responses":
+              ["Breathe it out." ,"What about doing some breathing exercise?Step 1: Slowly exhale  Step 2: Slowly inhale Step 3: Hold your breath Step 4: Exhale again",
+                "Connect to nature ,it will help you to relax","Write down your thoughts,it will help you to relax",". Have a banana.","Get a Colouring Book.",
+              "Cook up a face-mask. Yep, that's right, i am suggesting you mix up half an avocado, a teaspoon of honey,2 tablespoons of hot water and smear it all over your face so that you vaguely resemble the Wicked Witch of the West.Relax for 10 to look and feel rejuvenated."]
+    },
+    {
+      "tag": "AQ7",
+      "patterns":
+              ["This got me so scared that I was afraid of my own shadow!" ,"This gave me the heebie-jeebies."
+               ,"My blood ran cold it scared me so much."
+               ,"It was such a fright that I jumped out of my!"
+               ,"I got so scared that my heart missed a beat."
+                ,"I shook like a leaf.",
+               "I am so scared.","I feel very terrified","I was quaking in my boots!","it was like an act of God!"],
+      "responses":
+              ["What can I do to help right now?","You're not alone","I'm always here if you need to talk",
+               "Dare to be brave today and trust that when you spread your wings, you will fly!","Just remember the cave you dread entering contains the treasure you want."]
+    },
+    {
+      "tag": "ok",
+      "patterns":
+              ["ok","okey","yes, sure","of course"],
+      "responses":
+              ["Let's go"]
+    },
+    {
+      "tag": "cancel",
+      "patterns":
+              ["no","sorry,I can't"],
+      "responses":
+              ["It's okey","fine"]
+    }
+
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/UserHome.css') }}">
+    
+</head>
+<body> 
+
+
+<!-- Start Setting Box -->
+<div class="settings-box">
+    <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+    </div>
+    <div class="settings-container">
+        <div class="option-box">
+            <h4>Colors</h4>
+            <ul class="colors-list">
+                <li data-color="#ff4500" class="active"></li>
+                <li data-color="#e91e63"></li>
+                <li data-color="#009688"></li>
+                <li data-color="#11aa2b"></li>
+                <li data-color="#03a9f4"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Setting Box -->
+
+    <!-- Start UserHome Header -->
+    <div class="header-area" id="home">
+        <div class="logo">Sarah Logo</div>
+            <ul class="links center-links">
+                <li><a href="/profile" class="active">View Profile</a></li>
+                <li><a href="#">View Progress</a></li>
+                <li><a href="/logout">LogOut</a></li>
+            </ul>
+        </div>
+        </div> 
+    <!-- End UserHome Header -->
+
+
+<!-- Start UserHome Body -->
+<div class="user-body">
+    <div class="body-text">
+        <h2>We are here to your serenity</h2>
+        <p>We are happy that you came back again!</p>
+        <p>Wishing a Good Session</p>
+        <form action="/session" method="POST">
+            <input type="text" value="userHome" style="visibility: hidden;">
+            <button>Start Session</button>
+        </form>
+        
+        
+    </div>
+    <div class="body-image">
+        <img src="static/imgs/welcome1.webp">
+    </div>
+</div>
+
+<!-- End UserHome Body -->
+
+
+
+    <script src="{{ url_for('static', filename='js/master.js') }}"></script>
+
+</body>
+</html>

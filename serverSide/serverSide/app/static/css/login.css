@@ -1,0 +1,168 @@
+/* Start Login Page */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+:root{
+    --main-color: #FF4B2B;
+}
+
+
+.sign form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.sign p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+.sign span {
+	font-size: 12px;
+}
+.sign input{
+    background-color: #eee;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 15px;
+    margin: 8px 0px;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.sign h1{
+    font-weight: bold;
+    margin: 0;
+}
+
+.sign a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.sign button{
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button:focus{
+    outline: none;
+}
+
+
+
+.container-sign-in{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.22);
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.sign-in-container{
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.social-container{
+    margin: 20px 0;
+}
+
+.social-container a{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+/* End Login Page */
+
+/* Start Sign up Custom */
+.container-sign-up{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.22);
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    max-width: 100%;
+    min-height: 680px;
+}
+
+
+/* Start Radio Box  */
+.custom-select{
+    margin: 8px 0px;
+}
+
+.container-sign-up .form-container .custom-select select{
+    width: 40%;
+    height: 35px;
+    border: none;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.container-sign-up .form-container .custom-select select:focus{
+    outline: none;
+}
+
+
+/* End Sign up custom */
+
+p.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
